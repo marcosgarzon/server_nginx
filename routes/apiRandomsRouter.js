@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const {fork} = require('child_process')
-const PORT = parseInt(process.argv[2]) || 8081
+const PORT = process.pid
 
 router.get('/', (req, res) => {
     const cantidad = parseInt(req.query.cant)

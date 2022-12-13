@@ -18,13 +18,20 @@ PM2
   
 pm2 start app2.js --watch (Modo Fork)  
   
-pm2 start app.js -i max --watch  (Modo Cluster)   
+pm2 start app2.js -i max --watch  (Modo Cluster)   
   
 pm2 delete app.js all // pm2 delete app2.js all  
   
 pm2 restart app.js     
   
-pm2 monit  
+pm2 monit   
+  
+---  
+  
+nodemon app.js (Modo Fork)  
+  
+nodemon app.js --mode CLUSTER (Modo Cluster)  
+  
   
 # RUTAS:    
   
